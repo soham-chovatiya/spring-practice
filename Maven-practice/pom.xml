@@ -10,6 +10,8 @@
         <artifactId>demo</artifactId>
         <version>1.0-SNAPSHOT-Soham</version>
 
+    <packaging>jar</packaging>
+
     <properties>
         <maven.compiler.source>23</maven.compiler.source>
         <author.name>Soham</author.name>
