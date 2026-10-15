@@ -25,7 +25,7 @@
         <module>01-FirstSpring-Application</module>
         <module>02-maven-practice</module>
         <module>03-dependency-injection</module>
-        <module>02-maven-practice</module>
+        <module>04-Spring-Ioc-Container</module>
     </modules>
     <scm>
 		<connection/>
