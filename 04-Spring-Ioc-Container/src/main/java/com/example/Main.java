@@ -1,13 +1,22 @@
 package com.example;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.stereotype.Component;
+
+
 public class Main {
     public static void main(String[] args) {
 
-            OrderService orderService = new OrderService();
-            orderService.placeOrder();
+          ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+//
+        OrderService orderService = context.getBean(OrderService.class);
+        orderService.placeOrder();
 
-            PaymentService paymentService = new PaymentService();
-            paymentService.pay();
+//         User user = context.getBean(User.class);
+//         System.out.println(user.getName() + " " + user.getAge());
+
+
 
     }
 }
