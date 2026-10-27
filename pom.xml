@@ -26,6 +26,11 @@
         <module>02-maven-practice</module>
         <module>03-dependency-injection</module>
         <module>04-Spring-Ioc-Container</module>
+        <module>05-Circular-Dependency</module>
+        <module>05-Circular-Dependency/01-BeanScope-Demo</module>
+        <module>05-Circular-Dependency/02-bean-Initialization</module>
+        <module>06-BeanLifeCycle</module>
+        <module>07-XMLBasedConfig</module>
     </modules>
     <scm>
 		<connection/>

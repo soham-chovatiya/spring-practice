@@ -3,7 +3,7 @@ package com.example.Payment;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 //@Qualifier
 public class CardPayment implements PaymentService {
 

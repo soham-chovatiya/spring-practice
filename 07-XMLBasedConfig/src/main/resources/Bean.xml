@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- bean definitions here -->
+
+<!--    <bean id = "orderService"-->
+<!--          name = "orderService, orderService2" class = "com.example.OrderService"> </bean>-->
+
+<!--    <bean id = "orderService2" class = "com.example.OrderService"> </bean>-->
+
+<!--    for dependency Injection-->
+
+<!--    <bean id = "paymentService"   class = "com.example.PaymentService">-->
+
+<!--        <constructor-arg index = "0"  value = "UPI"/>-->
+<!--        <constructor-arg index = "1" value = "3"/>-->
+
+<!--    </bean>-->
+
+<!--    <bean id = "orderService" name = "orderService, orderService2" class = "com.example.OrderService">-->
+<!--&lt;!&ndash;        <constructor-arg ref = "paymentService"/>&ndash;&gt;-->
+<!--        <property name = "paymentService" ref = "paymentService" />-->
+<!--    </bean>-->
+
+    <bean id = "upiPServ" class = "cam.example.Payment.UPIPayment"/>
+
+    <bean id = "crdPserv" class = "cam.example.Payment.CardPaymentServ"/>
+
+    <bean id = "ordServ" class = "cam.example.OrderService">
+
+        <constructor-arg ref = "crdPserv"/>
+
+    </bean>
+
+    </beans>

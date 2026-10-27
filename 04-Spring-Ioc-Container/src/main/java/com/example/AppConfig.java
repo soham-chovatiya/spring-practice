@@ -14,9 +14,9 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     @Bean
-   public User createUser(){
+    public User createUser(){
        return new User("Aditya", 22);
-   }
+    }
 
    @Bean
    public PaymentService createPayment(){
